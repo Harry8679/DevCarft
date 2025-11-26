@@ -4,7 +4,7 @@ import matter from "gray-matter";
 import { remark } from "remark";
 import html from "remark-html";
 
-const postsDir = path.join(process.cwd(), "src/content/posts");
+const postsDir = path.join(process.cwd(), "content/posts");
 
 export async function getPost(slug: string) {
   const file = fs.readFileSync(path.join(postsDir, `${slug}.md`), "utf-8");
